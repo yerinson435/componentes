@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --background-color: #ffffff;
+  --border-color: #ccc;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --naruto-bg-color: #f0f0f0;
+  --button-color: #4CAF50;
+  --button-hover-color: #45a049;
+  --action-btn-color: #008CBA;
+  --action-btn-hover-color: #007BB5;
+  --info-box-bg-color: #ffeb3b;
+  --info-box-button-color: #ff9800;
+  --info-box-button-hover-color: #fb8c00;
+  --alert-bg-color: #f44336;
+  --alert-button-color: #2196F3;
+  --alert-button-hover-color: #1976D2;
+  --text-color-primary: #333;
+  --text-color-secondary: #666;
+  --closebtn-color: white;
+  --closebtn-hover-color: black;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.componente{
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.naruto{
+  background-color: var(--naruto-bg-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+
+.naruto img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.naruto h2{
+  color: var(--text-color-primary);
+  margin: 10px 0;
+}
+
+.naruto p{
+  color: var(--text-color-secondary);
+  margin: 10px 0;
+}
+
+.naruto button{
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.naruto button:hover{
+  background-color: red;
+}
+
+.boton{
+  background-color: var(--action-btn-color);
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.boton:hover{
+  background-color: aquamarine;
+}
+
+.jutsu{
+  background-color: var(--info-box-bg-color);
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.jutsu img{
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.jutsu h3{
+  color: var(--text-color-primary);
+  margin: 10px 0;
+}
+
+.jutsu p{
+  color: var(--text-color-secondary);
+  margin: 10px 0;
+}
+
+.jutsu button{
+  background-color: var(--info-box-button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.jutsu button:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+.alert{
+  padding: 20px;
+  background-color: var(--alert-bg-color);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.alert .mision{
+  margin-left: 15px;
+  color: var(--closebtn-color);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  
+}
+
+.alert .mision:hover{
+  color: var(--closebtn-hover-color);
+}
+
+.alert-btn{
+  background-color: var(--alert-button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+
+.alert-btn:hover{
+  background-color: rgb(25, 132, 70);
+}
+
+.alert img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
